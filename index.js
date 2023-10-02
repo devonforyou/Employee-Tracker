@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const mysql = require('mysql2');
+const userPrompt = require('./lib/user-prompt')
 
 const PORT = process.env.PORT || 3001;
 const figlet = require('figlet');
@@ -33,5 +34,5 @@ figlet("Employee Tracker", function (err, data) {
 })
 
 function init() {
-    userPrompt(db)
+    userPrompt
 }
