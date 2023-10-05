@@ -1,8 +1,6 @@
-const inquirer = require('inquirer');
 const mysql = require('mysql2');
-const userPrompt = require('./lib/user-prompt')
+const userPrompt = require('./lib/user-prompt');
 
-const PORT = process.env.PORT || 3001;
 const figlet = require('figlet');
 
 const db = mysql.createConnection({
@@ -12,7 +10,6 @@ const db = mysql.createConnection({
     database: 'employees_db'
 }
 );
-
 
 db.connect((err) => {
     // Throwing an error message if unsuccessful
@@ -34,5 +31,5 @@ figlet("Employee Tracker", function (err, data) {
 })
 
 function init() {
-    userPrompt
+    userPrompt(db)
 }

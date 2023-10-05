@@ -1,37 +1,37 @@
-INSERT INTO  department (name)
-VALUES ("Administration"),
-("Marketing"),
-("Human Resources"),
-("IT");
+INSERT INTO departments (name)
+VALUES ('Administration'),
+('Marketing'),
+('Human Resources'),
+('IT');
 
-INSERT INTO role (title, salary, department_id)
-VALUES ("IT Director", 160.000, 4),1 
-("System Administrator", 70.000, 4),2
-("Database Administrator", 60.000, 4),3
-("Chief HR Officer", 96.000, 3),4
-("Recruiter", 74.000, 3),5
-("Director of Sales", 180.000 , 2),6
-("Account Manager", 90.000, 2),7
-("Sales Representative", 62.000, 2), 8
-("Social Media Marketing", 55.000, 2),9
-("Office Administration", 73.000, 1),10
-("Secretary", 69.000, 1),11
-("Chief Executive Officer", 430.000, 1)12
+INSERT INTO roles (title, salary, department_id)
+VALUES ('IT Director', 160000, 4),
+('System Administrator', 70000, 4),
+('Database Administrator', 60000, 4),
+('Chief HR Officer', 96000, 3),
+('Recruiter', 74000, 3),
+('Director of Sales', 180000 , 2),
+('Account Manager', 90000, 2),
+('Sales Representative', 62000, 2),
+('Social Media Marketing', 55000, 2),
+('Office Administration', 73000, 1),
+('Secretary', 69000, 1),
+('Chief Executive Officer', 430000, 1);
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Jake", "Hill", 3, NULL),
-("Jay", "Zee", 4, 1),
-("Lady", "Gaga", 7, 1),
-("Chester", "Bennington", 12, NULL),
-("Lil", "Yachty", 8, NULL),
-("Katy", "Perry", 2, NULL),
-("Black", "Pink", 3, NULL ),
-("Sullivan", "King", 4, 1),
-("Tyler", "Creator", 11, NULL),
-("Mi", "Gos", 8, NULL),
-("Pink", "Doll", 9, NULL),
-("Ice", "Spice", 5, NULL),
-("ASAP", "Rocky", 6, 1),
-("ASAP", "Ferg", 1, 1),
-("Kendrick", "Lamar", 10, NULL),
-("Ill", "Enium", 9, NULL)
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
+VALUES ('Chester', 'Bennington', 12, NULL),
+('ASAP', 'Rocky', 6, NULL),
+('ASAP', 'Ferg', 1, NULL), 
+('Sullivan', 'King', 4, NULL),
+('Jake', 'Hill', 3, 3),
+('Jay', 'Zee', 8, 2),
+('Lady', 'Gaga', 7, 2),
+('Lil', 'Yachty', 8, 2),
+('Katy', 'Perry', 2, 3),
+('Black', 'Pink', 3, 3),
+('Tyler', 'Creator', 11, 1),
+('Mi', 'Gos', 8, 2),
+('Pink', 'Doll', 9, 2),
+('Ice', 'Spice', 5, 4),
+('Kendrick', 'Lamar', 10, 1),
+('Ill', 'Enium', 9, 2)
